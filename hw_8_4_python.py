@@ -1,4 +1,4 @@
-import math
+import math, random
 
 
 def test_greeting():
@@ -11,6 +11,7 @@ def test_greeting():
     output = f"Привет, {name}! Тебе {age} лет."
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
+    print(f" \n {output}")
 
 
 def test_rectangle():
@@ -44,8 +45,9 @@ def test_circle():
     # TODO сосчитайте длину окружности
     length =2 * math.pi * r
     assert length == 144.51326206513048
+    print(f" \n {length}")
 
-import random
+
 def test_random_list():
     """
     Создайте список из 10 случайных чисел от 1 до 100 и отсортируйте его по возрастанию.
@@ -81,7 +83,7 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
     d = dict(zip(first, second))
-    print(f" \n\n {d=}")
+    print(f" \n\n {d.values()}")
 
     assert isinstance(d, dict)
     assert len(d) == 5
